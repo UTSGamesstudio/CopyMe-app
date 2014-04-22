@@ -1,0 +1,38 @@
+<!-- XML Settings file for AED -->
+<!-- The input type: video or webcam -->
+<input>
+	<type>webcam</type>              <!-- webcam or video or batch -->	
+</input>
+
+
+<!-- Web cam parameter settings, Resolution -->
+<webcam>
+	<resolution>
+		<horizontal>640</horizontal> <!-- Horizontal resolution: 640 -->
+		<vertical>480</vertical>	 <!-- Vertical resolution:   480 -->	
+	</resolution>
+	<device>1</device>               <!-- use if you have multiple webcams: starting at 0 -->
+</webcam>
+
+<tracker>
+	<update>everyupdate</update>	     <!-- everyframe or everyupdate, step -->
+	<view>spline</view>                  <!-- spline, mesh, none -->
+    <rescale>1</rescale>
+    <iterations>1</iterations>    <!-- iterations(10) // [1-25] 1 is fast and inaccurate, 25 is slow and accurate -->
+    <clamp>1</clamp> <!-- clamp(3) // [0-4] 1 gives a very loose fit, 4 gives a very tight fit -->
+    <tolerance>0.01</tolerance> <!-- tolerance(.01) // [.01-1] match tolerance -->
+    <attempts>4</attempts> <!-- attempts(1) // [1-4] 1 is fast and may not find faces, 4 is slow but will find faces -->
+    <step>1</step>
+</tracker>
+
+<settings>
+	<virtualsync>true</virtualsync> <!-- true or false -->
+	<framerate>60</framerate>        <!-- default: 30 -->
+	<logging>
+		<level>notice</level>        <!-- verbose, notice, error, warning, fatal, silent -->
+		<output>console</output>     <!-- console or logfile -->
+		<logfile>replace</logfile>   <!-- append or replace for Log -->
+	</logging>	
+	
+</settings>
+<!-- End XML file -->

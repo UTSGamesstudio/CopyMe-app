@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GamePlayMenuViewController">
+            <connections>
+                <outlet property="basicButton" destination="XDK-bO-3dg" id="LwC-lB-ScC"/>
+                <outlet property="basicText" destination="izT-Lw-Fd3" id="pCG-ri-np9"/>
+                <outlet property="buttonBackground" destination="sse-b7-CMM" id="Fgm-A9-E7c"/>
+                <outlet property="hardButton" destination="BKp-ve-6cf" id="2fM-ly-apc"/>
+                <outlet property="hardText" destination="KgE-ge-3CA" id="dU9-1J-50X"/>
+                <outlet property="homeButton" destination="XCf-qS-kvK" id="1pQ-ah-xr0"/>
+                <outlet property="mediumButton" destination="1bF-lj-Ofr" id="PNv-12-SnP"/>
+                <outlet property="mediumText" destination="79A-Yd-yND" id="VRZ-cE-zKV"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="izT-Lw-Fd3" userLabel="basicText">
+                    <rect key="frame" x="81" y="218" width="428" height="91"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <accessibility key="accessibilityConfiguration" label="Emotions: Happy and Sad">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="79A-Yd-yND" userLabel="mediumText">
+                    <rect key="frame" x="86" y="497" width="591" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <accessibility key="accessibilityConfiguration" label="Emotions: Happy, Sad, Surprised and Angry">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="KgE-ge-3CA" userLabel="hardText">
+                    <rect key="frame" x="83" y="776" width="591" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <accessibility key="accessibilityConfiguration" label="Emotions: Happy, Sad, Surprised, Angry, Scared and Yucky">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XDK-bO-3dg" userLabel="basicButton">
+                    <rect key="frame" x="116" y="35" width="565" height="210"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <accessibility key="accessibilityConfiguration" label="Basic"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="basicPlayButtonPressed:" destination="-1" eventType="touchUpInside" id="J2Y-oz-aG5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1bF-lj-Ofr" userLabel="mediumButton">
+                    <rect key="frame" x="116" y="315" width="565" height="210"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <accessibility key="accessibilityConfiguration" label="Medium"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="mediumPlayButtonPressed:" destination="-1" eventType="touchUpInside" id="YW5-Eh-HiH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BKp-ve-6cf" userLabel="hardButton">
+                    <rect key="frame" x="116" y="590" width="565" height="210"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <accessibility key="accessibilityConfiguration" label="Hard"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hardPlayButtonPressed:" destination="-1" eventType="touchUpInside" id="505-4u-GnX"/>
+                    </connections>
+                </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.77000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sse-b7-CMM" userLabel="background">
+                    <rect key="frame" x="0.0" y="879" width="768" height="145"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XCf-qS-kvK" userLabel="homeButton">
+                    <rect key="frame" x="299" y="905" width="170" height="117"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <accessibility key="accessibilityConfiguration" label="Return to Menu"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="AgE-ey-JDo"/>
+                    </connections>
+                </button>
+            </subviews>
+        </view>
+    </objects>
+</document>

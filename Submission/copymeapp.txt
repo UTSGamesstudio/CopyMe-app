@@ -1,0 +1,61 @@
+APP NAME,
+
+CopyMe
+
+
+APP DESCRIPTION
+
+CopyMe is a simple facial expression game designed for young children. CopyMe requires limited literacy skills and little preparation to begin the game of mimicking onscreen facial expressions while viewing your own facial expression formation.
+ 
+The creators of CopyMe are a research team from the University of Technology, Sydney. Research regarding CopyMe as a possible Autism Spectrum Disorder assistive tool has resulted in multiple paper publications for the team, as well as motivation to provide continual improvements to the game. Please consider completing the in-App online survey to help further our research.
+ 
+CopyMe is not a medical aid and should not be considered a diagnostic tool. 
+ 
+List of publications related to CopyMe:
+ 
+Towards an expression recognition game to assist the emotional development of children with autism spectrum disorders
+November 2012 WASA '12: Proceedings of the Workshop at SIGGRAPH Asia
+Harrold, N., Tan, C. T., Rosser, D.
+ 
+Can you CopyMe?: an expression mimicking serious game
+November 2013 SA '13: SIGGRAPH Asia 2013 Symposium on Mobile Graphics and Interactive Applications
+Tan, C. T., Harrold, N., Rosser, D. 
+
+
+APP KEYWORDS
+
+CopyMe
+Copy Me
+Autism
+Autism Spectrum Disorder
+ASD
+Facial Expression
+Face Game
+Emotion Game
+Assistive Tool
+
+CopyMe, Copy Me, Autism, Autism Spectrum Disorder, ASD, Facial Expression, Face Game, Emotion Game
+
+PRICE
+
+$0
+
+
+AVAILABLE COUNTRIES
+
+All
+
+2012-2014 Natalie Harrold and Daniel Rosser
+
+Primary Cat:
+Education
+
+Secondary Cat:
+Games
+-Educational
+
+Support URL:
+http://www.gamesstudio.org/copyme/index.php
+
+
+
