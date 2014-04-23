@@ -20,5 +20,7 @@
 *.out
 *.app
 
+*xcuserstate
+*xcshareddata
 xcuserdata/
 xcshareddata/
