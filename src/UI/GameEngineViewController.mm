@@ -135,7 +135,7 @@
     [self.glView startAnimation];
 	
 	
-	[self setDifficulty:difficultyLevel];
+	//[self setDifficulty:difficultyLevel];
 	
     return YES;
 }
