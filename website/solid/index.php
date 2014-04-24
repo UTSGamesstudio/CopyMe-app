@@ -2147,7 +2147,7 @@
                  <div id="logo"><a href="#home"><img src="images/logo.png" alt="logo"></a></div>
                  <div id="slogan"><h1>CopyMe iPad Application</h1></div>
                  <a href="#" class="cta1" id="button_more">Learn More</a>
-                 <a href="#" class="cta2" id="button_download">Download Now</a>
+                 <a href="https://itunes.apple.com/au/app/copyme/id825405687?mt=8" class="cta2" id="button_download">Download Now</a>
                   <a href="support.php" class="cta1" id="button_more">Support</a>
                  <img src="images/homescreen.png" class="img-responsive" id="home_image" alt="img">
             </div> <div class="clearfix"></div>
@@ -2161,6 +2161,8 @@
     <!--###############################-->
     <!--Features 1 ####################-->
     <!--###############################-->
+
+    <?php /**
     
     <section id="features_1">
         <div class="container">
@@ -2171,15 +2173,15 @@
                 </div>
                 
                 <div class="col-sm-6 col-md-6 col-lg-6" id="features_1_content">
-                    <h2>Detailed documentation</h2>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h2> </h2>
+                    <p> 
                     </p>
                     <div class="feature">
                         <svg viewBox="0 0 32 32" class="feature_icon">
                         <use xlink:href="#graph-pie1"></use></svg>
                         <div>
-                            <h4>Beautiful, modern design</h4>
-                            <p>Epsum factorial non deposit quid pro quo<br>hic escorol.</p>
+                            <h4> </h4>
+                            <p> <br> </p>
                         </div>
                     </div>
                     
@@ -2187,8 +2189,8 @@
                         <svg viewBox="0 0 32 32" class="feature_icon">
                             <use xlink:href="#joystick"></use></svg>
                         <div>
-                            <h4>Easy to set up</h4>
-                            <p>Epsum factorial non depositquid pro quo<br>hic escorol.</p>
+                            <h4> </h4>
+                            <p> <br> </p>
                         </div>
                     </div>
 
@@ -2223,14 +2225,14 @@
                 
                 <div class="col-sm-6 col-md-6 col-lg-6" id="features_2_content">
                     <h2>All you want from an app</h2>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <p> 
                     </p>
                     <div class="feature">
                         <svg viewBox="0 0 32 32" class="feature_icon">
                             <use xlink:href="#ribbon"></use></svg>
                         <div>
-                            <h4>Video background</h4>
-                            <p>Epsum factorial non deposit quid pro quo<br>hic escorol.</p>
+                            <h4> </h4>
+                            <p> <br> </p>
                         </div>
                     </div>
                     
@@ -2238,8 +2240,8 @@
                         <svg viewBox="0 0 32 32" class="feature_icon">
                             <use xlink:href="#rotate"></use></svg>
                         <div>
-                            <h4>Cool animations</h4>
-                            <p>Epsum factorial non depositquid pro quo<br>hic escorol.</p>
+                            <h4> </h4>
+                            <p> <br> </p>
                         </div>
                     </div>
                     
@@ -2278,8 +2280,8 @@
         <div class="container">
             <div class="row" id="features_3_intro">
                 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
-                    <h2>Awesome Features</h2>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h2>Facial Recognition</h2>
+                    <p> 
                     </p>
                 </div>
             </div>
@@ -2288,14 +2290,14 @@
                 <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_left">
                     
                     <div class="feature">
-                        <h4>Awesome Features</h4>
-                        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                        <h4>Realtime emotion analysis</h4>
+                        <p>
                         </p>
                     </div>
                     
                     <div class="feature">
-                        <h4>Awesome Features</h4>
-                        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                        <h4></h4>
+                        <p>
                         </p>
                     </div>
                     
@@ -2308,14 +2310,14 @@
                 <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_right">
                     
                     <div class="feature">
-                        <h4>Awesome Features</h4>
-                        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                        <h4> </h4>
+                        <p> 
                         </p>
                     </div>
                     
                     <div class="feature">
-                        <h4>Awesome Features</h4>
-                        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                        <h4> </h4>
+                        <p>
                         </p>
                     </div>
                     
@@ -2325,6 +2327,10 @@
             
         </div>
     </section>
+
+    */
+
+    ?>
 
 
     <!--Arrows - version with custom background color to match section above-->
