@@ -8,6 +8,7 @@
 
 #import "SurveyViewController.h"
 #import "AppGlobals.h"
+#include "MKParentalGate.h"
 
 //#import "TestFlight.h"
 
@@ -161,11 +162,26 @@
 	NSLog(@"helpButtonPressed");
 }
 
+
+- (void)loadParentalGate {
+    MKParentalGateSuccessBlock success = ^{
+        NSLog(@"PG YES");
+        [self loadCustomWebURL:kWebsiteSurvey];
+    };
+    
+    MKParentalGateFailureBlock failure = ^{
+        NSLog(@"PG NO");
+        [self showFailedCover];
+    };
+    
+    [MKParentalGate displayGateWithCurrentViewController:self successBlock:success failureBlock:failure];
+}
+
 - (void)alertView:(UIAlertView *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 	//NSString * title = [actionSheet title];
 		if (buttonIndex == 1) {
 			NSLog(@"YES");
-			[self loadCustomWebURL:kWebsiteSurvey];
+			[self loadParentalGate];
 			return;
 		}
 		else if (buttonIndex == 0) {

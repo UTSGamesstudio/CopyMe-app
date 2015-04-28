@@ -16,43 +16,55 @@
 		<string>git://github.com/prossel/ofxSettings.git</string>
 		<key>1F543F0C-6E31-49C9-BF4D-80E20CC8F8A0</key>
 		<string>https://github.com/danoli3/openFrameworks.git</string>
+		<key>2DE9C8846D9375EAACFABA8963120E8E7719BAF5</key>
+		<string>https://github.com/UTSGamesstudio/CopyMe-app.git</string>
 		<key>8FE142E7-538F-47E4-835B-0FBB045C0B0E</key>
 		<string>https://github.com/kylemcdonald/ofxFaceTracker.git</string>
+		<key>BA9120B8F9468FD834783F2858AC528569A85419</key>
+		<string>https://github.com/UTSGamesstudio/CopyMe-app.git</string>
 		<key>C53B2F85-A9E2-406C-8C03-2DE1FA159979</key>
 		<string>https://github.com/danoli3/ofxCv.git</string>
-		<key>CF1395E7-B979-4D66-85A5-D66339A49318</key>
-		<string>https://github.com/UTSGamesstudio/CopyMe-app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>apps/GamesStudio/CopyMe-app/CopyMe.xcodeproj/project.xcworkspace</string>
+	<string>CopyMe.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>02E57732-FA6F-4537-A354-ED61FD54C0A6</key>
-		<string>../../addons/ofxAnimatable</string>
+		<string>../../../addons/ofxAnimatable</string>
 		<key>1B3C7F7E-D396-4B84-ABCF-11A48CC3D6AC</key>
-		<string>../../addons/ofxSettings</string>
+		<string>../../../addons/ofxSettings</string>
 		<key>1F543F0C-6E31-49C9-BF4D-80E20CC8F8A0</key>
-		<string>../../../../..</string>
+		<string>../../../openFrameworks</string>
+		<key>2DE9C8846D9375EAACFABA8963120E8E7719BAF5</key>
+		<string>../../..</string>
 		<key>8FE142E7-538F-47E4-835B-0FBB045C0B0E</key>
-		<string>../../addons/ofxFaceTracker</string>
-		<key>C53B2F85-A9E2-406C-8C03-2DE1FA159979</key>
-		<string>../../addons/ofxCv</string>
-		<key>CF1395E7-B979-4D66-85A5-D66339A49318</key>
+		<string>../../../addons/ofxFaceTracker</string>
+		<key>BA9120B8F9468FD834783F2858AC528569A85419</key>
 		<string>../..</string>
+		<key>C53B2F85-A9E2-406C-8C03-2DE1FA159979</key>
+		<string>../../../addons/ofxCv</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/danoli3/openFrameworks.git</string>
+	<string>https://github.com/UTSGamesstudio/CopyMe-app.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1F543F0C-6E31-49C9-BF4D-80E20CC8F8A0</string>
+	<string>BA9120B8F9468FD834783F2858AC528569A85419</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CF1395E7-B979-4D66-85A5-D66339A49318</string>
+			<string>2DE9C8846D9375EAACFABA8963120E8E7719BAF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BA9120B8F9468FD834783F2858AC528569A85419</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CopyMe-app</string>
 		</dict>

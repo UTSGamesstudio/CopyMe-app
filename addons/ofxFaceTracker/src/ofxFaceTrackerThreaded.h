@@ -12,21 +12,15 @@ public:
 	,meanObjectPointsReady(false){
 	}
 	~ofxFaceTrackerThreaded() {
-		if(isThreadRunning()) {
-			stopThread();
-			ofSleepMillis(500);
-			ofLog(OF_LOG_NOTICE, "ofxFaceTracker::Thread stopped");
-		}
-	}
-	void exit() {
-		waitForThread(true);
-		ofLog(OF_LOG_NOTICE, "ofxFaceTracker::Thread exited");
-	}
+        if(isThreadRunning()) {
+            ofLog(OF_LOG_ERROR, "ofxFaceTracker::Thread not stopped. Must call waitForThread() in ofApp::exit() or exit() of class that holds this object");
+        }
+    }
 	void setup() {
 		failed = true;
 		failedMiddle = true;
 		ofxFaceTracker::setup();
-		startThread(true, false);
+		startThread(true);
 	}
 	bool update(cv::Mat image) {
 		dataMutex.lock();
@@ -83,9 +77,7 @@ protected:
 		ofxFaceTracker* threadedTracker = new ofxFaceTracker();
 		threadedTracker->setup();
 		
-		if(isThreadRunning()) {
-			ofLog(OF_LOG_NOTICE, "ofxFaceTracker::Thread running");
-		} else {
+		if(!isThreadRunning()) {
 			ofLog(OF_LOG_ERROR, "ofxFaceTracker::Error Failed to start thread");
 		}
 		while(isThreadRunning()) {

@@ -215,6 +215,67 @@
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
 
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+//    NSString *urlString = [[request URL]absoluteString];
+//    if([urlString  isEqual: @"https://docs.google.com/forms/d/1AZItHJ80gqOYQX05j0HAoZoRB4XhuGyTQPjV-s6fltY/viewform"] == YES)
+//        return YES;   // Allow
+//    else
+//        return NO;  // Restrict
+    
+    NSURL *url = request.URL;
+    NSString *urlString = url.absoluteString;
+    
+    //Check for your own url. You can use more advanced checking techniques of course :)
+    
+    NSLog(urlString);
+    BOOL success = NO;
+    NSRange range = [urlString rangeOfString:@"https://docs.google.com/forms/"];
+    if (range.location != NSNotFound) {
+        NSLog(@"URL Google Docs Survey");
+        return YES;
+    }
+    else {
+        success = NO;
+    }
+    
+    range = [urlString rangeOfString:@"http://copyme.gamesstudio.org/"];
+    if (range.location != NSNotFound) {
+        NSLog(@"URL Games Studio");
+        return YES;
+    }
+    else {
+        success = NO;
+    }
+    
+    range = [urlString rangeOfString:@"http://www.google.com/accounts/TOS"];
+    if (range.location != NSNotFound) {
+        success = NO;
+    }
+    else {
+        success = NO;
+    }
+    
+
+    if(success == NO){
+        NSLog(@"URL unknown. Externally");
+        BOOL res = [[UIApplication sharedApplication] canOpenURL:url];
+        if (res) {
+            [[UIApplication sharedApplication] openURL:url];
+        }
+        return NO;
+    } else {
+        return YES;
+    }
+    
+    //[[UIApplication sharedApplication] openURL:url];
+    
+}
+
+- (void) loadExternally:(NSURL*)url {
+    [[UIApplication sharedApplication] openURL:url];
+}
+
 
 - (void)webView:(UIWebView *)aWebView didFailLoadWithError:(NSError *)error {
 	[self hideCover];

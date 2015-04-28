@@ -1,16 +1,16 @@
 #ifndef GamePrototype_ExpressionSystem_h
 #define GamePrototype_ExpressionSystem_h
 
-#if TARGET_IPHONE_SIMULATOR
-	#warning *** Simulator mode: video code works only on a device
-	#undef NOT_IPAD_SIMULATOR
-#else
-	#define NOT_IPAD_SIMULATOR
-#endif
+//#if TARGET_IPHONE_SIMULATOR
+//	#warning *** Simulator mode: video code works only on a device
+//	#undef NOT_IPAD_SIMULATOR
+//#else
+//	#define NOT_IPAD_SIMULATOR
+//#endif
 
 #include "ofMain.h"
-#include "ofxiPhone.h"
-#include "ofxiPhoneExtras.h"
+#include "ofxiOS.h"
+#include "ofxiOSExtras.h"
 
 #include "Globals.h"
 
@@ -225,7 +225,10 @@ public:
 	//	else if(type == VIDEO || type == BATCH)
 	//		vid.close();
 		
-		tracker.exit();
+//		tracker.exit();
+        if(tracker.isThreadRunning()) {
+            tracker.waitForThread(true);
+        }
     }
     
     ~Expressions()

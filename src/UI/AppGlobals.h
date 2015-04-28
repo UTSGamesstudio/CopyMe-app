@@ -5,9 +5,10 @@
 #pragma once
 
 static NSString * const kWebsiteURL = @"http://copyme.gamesstudio.org/";
-static NSString * const kWebsiteSurvey = @"http://copyme.gamesstudio.org/survey.php";
+static NSString * const kWebsiteSurvey = @"http://copyme.gamesstudio.org/survey131.php";
 static NSString * const kWebsitePrivacy = @"privacy.php";
 static NSString * const kWebsiteTerms = @"legal.php";
+static NSString * const kSurveyWebsiteURL = @"http://copyme.gamesstudio.org/";
 
 
 // notification center strings
